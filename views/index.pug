@@ -1,0 +1,22 @@
+doctype
+html
+  head
+    title URL Shortener Microservice
+    link(rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+  body
+    div.container
+      h1.header URL Shortener Microservice
+      img(src= "https://avatars0.githubusercontent.com/tomzurales?&s=128")
+      h3 By: Tom Zurales
+      blockquote
+        h4 User Stories
+        ul
+          li I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.<br><br>
+          li If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.<br><br>
+          li When I visit that shortened URL, it will redirect me to my original link.
+      h2 Example Usage:
+      p
+        h4 Request:
+        code https://still-dusk-11533.herokuapp.com/parser/<br>
+        h4 Response:
+        code {"language":"en-US","software":"X11; Linux x86_64; rv:45.0"}
