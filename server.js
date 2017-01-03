@@ -14,7 +14,7 @@ app.get('/', function(req, res){
 
 //------------------------------------------------------------------------
 
-//lets require/import the mongodb native drivers.
+/*lets require/import the mongodb native drivers.
 var mongodb = require('mongodb');
 
 //We need to work with "MongoClient" interface in order to connect to a mongodb server.
@@ -23,7 +23,7 @@ var MongoClient = mongodb.MongoClient;
 // Connection URL. This is where your mongodb server is running.
 
 //(Focus on This Variable)
-var url = process.env.MONGOLAB_URI;      
+var url = process.env.MONGOLAB_URI;
 //(Focus on This Variable)
 
 // Use connect method to connect to the Server
@@ -40,7 +40,7 @@ var url = process.env.MONGOLAB_URI;
   }
 });
 
-//-------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------*/
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
