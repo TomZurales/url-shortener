@@ -44,7 +44,7 @@ app.get('/new/:input_url*', function(req, res){
         db.close();
       }
     });
-    res.end(JSON.stringify({ "original_url": original_url, "short_id": 'http://localhost:5000/' + String(padToFour(url_num))}));
+    res.end(JSON.stringify({ "original_url": original_url, "short_id": 'https://mighty-falls-38118.herokuapp.com/' + String(padToFour(url_num))}));
   }
   else{
     res.end(JSON.stringify({"original_url": 'invalid_url', "short_url": null}));
